@@ -1,40 +1,51 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import {Home} from './comps/Home'
+import { Home } from './comps/Home'
 import './App.css'
 import { useAtom } from 'jotai'
 import { navStateAtom } from './atoms'
+import { Navbar } from './comps/Navbar'
+import { NavItem } from './comps/NavItem'
 function App() {
 
 
     const [navState, setNavState] = useAtom(navStateAtom)
 
     const mainView = () => {
-        switch(navState){
+        switch (navState) {
             case 'home':
-                return(
-                <Home></Home>
+                return (
+                    <Home></Home>
 
                 )
 
             default:
-                return(
+                return (
                     <Home></Home>
                 )
-                }
+        }
     }
     return (
         <>
-            
+
             <div>
                 {
-                mainView()
+                    mainView()
                 }
             </div>
-            <div className="navbar">
+            <Navbar>
+                <NavItem icon="home" label="ホーム" onClick={() =>
+                    setNavState("home")} />
+                <NavItem icon="menu_book" label="メニュー" onClick={() => setNavState("menu")} />
+                <NavItem icon="favorite" label="お気に入り" onClick={() => setNavState("favorite")} />
+                <NavItem icon="qr_code" label="食券" />
+
+            </Navbar>
+            {/*
+            <div className="navbar"> 
                 <div className={
-                     navState! == 'home'?'navbarItem focused':'navbarItem' 
+                     navState !== 'home'?'navbarItem focused':'navbarItem' 
                 }>
                     <div className="navbarItemIcon">
                         <span className="material-symbols-rounded">
@@ -70,8 +81,9 @@ function App() {
                     
                 </div>
             </div>
+            */}
         </>
-    )
+    );
 }
 
 export default App
