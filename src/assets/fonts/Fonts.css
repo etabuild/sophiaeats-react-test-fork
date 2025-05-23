@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'line_seed_jp';
+    font-weight: normal 400;
+    src: url('line_seed_jp/LINESeedJP_OTF_Rg.woff2');
+}
+@font-face {
+    font-family: 'line_seed_jp';
+    font-weight: bold 600;
+    src:url('line_seed_jp/LINESeedJP_OTF_Bd.woff2');
+}
+@font-face{
+    font-family: 'line_seed_jp';
+    font-weight: 200;
+    src: url('line_seed_jp/LINESeedJP_OTF_Th.woff2');
+}
+@font-face{
+    font-family: 'line_seed_jp';
+    font-weight: 800;
+    src: url('line_seed_jp/LINESeedJP_OTF_Eb.woff2');
+}
