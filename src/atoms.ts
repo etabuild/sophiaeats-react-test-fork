@@ -1,3 +1,3 @@
 import {atom} from "jotai"
-export const navStateAtom = atom<'home'|'menu'>('home')
+export const navStateAtom = atom<'home'|'menu'|'favorite'|'ticket'>('home')
 

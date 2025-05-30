@@ -7,6 +7,29 @@
     /*text-align: center;*/
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+}
+.appBarCartBtn {
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+.appBar{
+    display: flex;
+    justify-content: space-between;
+/*     background-color: #fff;
+ */    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 70px;
+    padding:10px;
+
+}
+.appBarLogo{
+    margin-left: 5px;
+    height: 70px;
 }
 
 .material-symbols-rounded {
@@ -31,19 +54,25 @@ body {
 
 .navbarItemIcon {
     color: #EC473D;
-    height: 24px;
+    height: 32px;
 }
 
-
+.navbarItemIcon span {
+    font-size: 38px;
+}
 
 .navbarItem {
     text-align: center;
-    width: 50px;
+    width: 70px;
+    
+}
+.navbarItem.focused {
+    background: #ceebff;
 }
 
 .navbarItemTitle {
     color: #EC473D;
-    font-size: 10px;
+    font-size: 13px;
     overflow: visible;
 }
 
@@ -51,12 +80,12 @@ body {
     font-weight: bold;
     padding: 10px 10px;
     position: fixed;
-    width: 70vw;
+    width: 85vw;
     border-radius: 99px;
-    height: 50px;
-
+    height: 65px;
+    
     background: #FFF8F7;
-    bottom: 40px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

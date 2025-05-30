@@ -7,5 +7,6 @@ type NavbarProps = {
 
 export const Navbar = ({ children }:
     NavbarProps) => {
+
     return <div className='navbar'>{children}</div>
 }

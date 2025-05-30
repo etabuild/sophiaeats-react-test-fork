@@ -7,6 +7,8 @@ import { useAtom } from 'jotai'
 import { navStateAtom } from './atoms'
 import { Navbar } from './comps/Navbar'
 import { NavItem } from './comps/NavItem'
+import { AppBar } from './comps/AppBar'
+import { Menu } from './comps/Menu'
 function App() {
 
 
@@ -19,6 +21,10 @@ function App() {
                     <Home></Home>
 
                 )
+            case 'menu':
+                return (
+                    <Menu></Menu>
+                )
 
             default:
                 return (
@@ -28,18 +34,23 @@ function App() {
     }
     return (
         <>
+        <AppBar></AppBar>
 
             <div>
                 {
                     mainView()
                 }
             </div>
+            
             <Navbar>
-                <NavItem icon="home" label="ホーム" onClick={() =>
-                    setNavState("home")} />
-                <NavItem icon="menu_book" label="メニュー" onClick={() => setNavState("menu")} />
-                <NavItem icon="favorite" label="お気に入り" onClick={() => setNavState("favorite")} />
-                <NavItem icon="qr_code" label="食券" />
+                <NavItem icon="home" label="ホーム" onClick={() =>{
+                    console.log(navState)
+                    setNavState("home")
+
+                }} key={"home"}/>
+                <NavItem icon="menu_book" label="メニュー" key="menu" onClick={() => setNavState("menu")} />
+                <NavItem icon="favorite" label="お気に入り" key="favorite" onClick={() => setNavState("favorite")} />
+                <NavItem icon="qr_code" label="食券" key="ticket" />
 
             </Navbar>
             {/*
