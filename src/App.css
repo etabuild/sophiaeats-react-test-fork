@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 .appBarCartBtn {
-    margin: 5px;
+    margin-top: 12px;
     width: 60px;
     height: 60px;
     border-radius: 100px;
@@ -23,13 +23,13 @@
     top:0;
     left:0;
     right:0;
-    height: 70px;
-    padding:10px;
+    height: 85px;
+    padding:20px 20px 15px 20px;
 
 }
 .appBarLogo{
-    margin-left: 5px;
-    height: 70px;
+
+    height: 85px;
 }
 
 .material-symbols-rounded {
@@ -49,10 +49,12 @@
 
 body {
     background: #FFE6CE;
-    font-family: line_seed_jp sans-serif;
+    font-family: 'line_seed_jp', sans-serif;
+
 }
 
 .navbarItemIcon {
+
     color: #EC473D;
     height: 32px;
 }
@@ -74,15 +76,16 @@ body {
     color: #EC473D;
     font-size: 13px;
     overflow: visible;
+    margin-top: 4px;
 }
 
 .navbar {
     font-weight: bold;
-    padding: 10px 10px;
+    padding: 15px 10px;
     position: fixed;
     width: 85vw;
     border-radius: 99px;
-    height: 65px;
+    height: 60px;
     
     background: #FFF8F7;
     bottom: 25px;
