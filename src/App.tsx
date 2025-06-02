@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Home } from './comps/Home'
 import './App.css'
 import { useAtom } from 'jotai'
@@ -42,7 +40,7 @@ function App() {
                 }
             </div>
             
-            <Navbar>
+            <NavBar>
                 <NavItem icon="home" label="ホーム" onClick={() =>{
                     console.log(navState)
                     setNavState("home")
@@ -52,7 +50,7 @@ function App() {
                 <NavItem icon="favorite" label="お気に入り" key="favorite" onClick={() => setNavState("favorite")} />
                 <NavItem icon="qr_code" label="食券" key="ticket" />
 
-            </Navbar>
+            </NavBar>
             {/*
             <div className="navbar"> 
                 <div className={
