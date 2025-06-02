@@ -4,8 +4,21 @@ export function AppBar(){
         <>
         <div className="appBar">
             <img className="appBarLogo" src={logo}/>
-            <button className="appBarCartBtn"></button>
+            <div className="appBarBtnContainer">
+                <button className="appBarBtn">
+                    <span className="material-symbols-rounded">
+                        language
+                    </span>
+                </button>
+                <button className="appBarBtn">
+                    <span className="material-symbols-rounded">
+                        shopping_cart
+                    </span>
+                </button>
+
             </div>
+
+        </div>
         </>
     )
 }

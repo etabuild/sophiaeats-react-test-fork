@@ -9,11 +9,21 @@
     height: 100vh;
     overflow: hidden;
 }
-.appBarCartBtn {
-    margin-top: 12px;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
+.appBarBtn {
+    background: none;
+    border: none;
+    margin: 15px 0 0 12px;
+    width: 52px;
+    height: 52px;
+    padding: 3px;
+    border-radius: 99px;
+}
+.appBarBtn span {
+    color: #EC473D;
+    font-size:45px;
+}
+.appBarBtn.focused {
+    background-color: #ffbcb9;
 }
 .appBar{
     display: flex;
@@ -80,7 +90,7 @@ body {
 }
 
 .navbar {
-    font-weight: bold;
+    font-weight: normal;
     padding: 15px 10px;
     position: fixed;
     width: 85vw;
