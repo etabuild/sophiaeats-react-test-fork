@@ -1,4 +1,4 @@
-import logo from "../assets/logo/logo_with_title.svg"
+import logo from "../assets/logo/logo-with-text.svg"
 export function AppBar(){
     return(
         <>
