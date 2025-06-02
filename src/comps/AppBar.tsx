@@ -5,12 +5,12 @@ export function AppBar(){
         <div className="appBar">
             <img className="appBarLogo" src={logo}/>
             <div className="appBarBtnContainer">
-                <button className="appBarBtn">
+                <button className="appBarBtn focused">
                     <span className="material-symbols-rounded">
                         language
                     </span>
                 </button>
-                <button className="appBarBtn">
+                <button className="appBarBtn focused">
                     <span className="material-symbols-rounded">
                         shopping_cart
                     </span>

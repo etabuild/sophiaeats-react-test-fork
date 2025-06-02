@@ -20,7 +20,7 @@
 }
 .appBarBtn span {
     color: #EC473D;
-    font-size:10vw;
+    font-size:45px;
 }
 .appBarBtn.focused {
     background-color: #ffbcb9;
@@ -33,13 +33,13 @@
     top:0;
     left:0;
     right:0;
-    height: 18vw;
-    padding:4.5vw 4.5vw 3.5vw 3.5vw;
+    height: 85px;
+    padding:20px 20px 15px 20px;
 
 }
 .appBarLogo{
 
-    height: 18vw;
+    height: 85px;
 }
 .mainView {
     margin-top: 100px
