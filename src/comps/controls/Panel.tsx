@@ -10,6 +10,7 @@ export function Panel({size, title, subtitle, keyColor}: PanelItemProps) {
         <>
             <div className={`panel`}
                  style={{
+                     scrollSnapAlign: 'start',
                      minWidth: '250px',
                      height: '250px',
                      borderRadius: '30px',
