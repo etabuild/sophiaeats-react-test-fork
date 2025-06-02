@@ -34,7 +34,7 @@ function App() {
         <>
         <AppBar></AppBar>
 
-            <div>
+            <div className="mainView">
                 {
                     mainView()
                 }
