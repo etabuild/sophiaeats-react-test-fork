@@ -13,27 +13,28 @@ export default defineConfig({
             manifest: {
                 name: 'Sophia Eats Test',
                 short_name: 'SophiaEats',
+                display: 'fullscreen',
                 description: '上智大学食券販売アプリ',
-                theme_color: '#ffffff',
+                theme_color: '#EC473D',
                 icons: [
                     {
-                        src: 'pwa-192x192.png',
+                        src: './src/assets/pwa-icons/pwa-icon-192x192.png',
                         sizes: '192x192',
                         type: 'image/png'
                     },
                     {
-                        src: 'pwa-512x512.png',
+                        src: './src/assets/pwa-icons/pwa-icon-512x512.png',
                         sizes: '512x512',
                         type: 'image/png'
                     },
                     {
-                        src: 'pwa-512x512.png',
+                        src: './src/assets/pwa-icons/pwa-icon-512x512.png',
                         sizes: '512x512',
                         type: 'image/png',
                         purpose: 'any'
                     },
                     {
-                        src: 'pwa-512x512.png',
+                        src: 'src/assets/pwa-icons/pwa-maskable-512x512.png',
                         sizes: '512x512',
                         type: 'image/png',
                         purpose: 'maskable'
