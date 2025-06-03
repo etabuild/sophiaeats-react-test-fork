@@ -6,13 +6,14 @@ type PanelItemProps = {
 }
 
 export function Panel({size, title, subtitle, keyColor}: PanelItemProps) {
+    console.log(title)
     return (
         <>
             <div className={`panel`}
                  style={{
                      scrollSnapAlign: 'start',
-                     minWidth: '250px',
-                     height: '250px',
+                     minWidth: '230px',
+                     height: '230px',
                      borderRadius: '30px',
                      background: keyColor,
                      // background: 'linear-gradient(0deg,'+keyColor+'FF 0%, '+keyColor+'00 100%) #fff',

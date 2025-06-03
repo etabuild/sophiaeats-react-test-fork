@@ -4,6 +4,8 @@ import './App.css'
 import { useAtom } from 'jotai'
 import { navStateAtom } from './atoms'
 import { NavBar } from './comps/NavBar'
+import {Ticket} from './comps/Ticket'
+import {Favorite} from './comps/Favorite'
 import { NavItem } from './comps/NavItem'
 import { AppBar } from './comps/AppBar'
 import { Menu } from './comps/Menu'
@@ -14,6 +16,11 @@ function App() {
 
     const mainView = () => {
         switch (navState) {
+            case "ticket":
+                return(
+                    <Ticket></Ticket>
+                )
+                break;
             case 'home':
                 return (
                     <Home></Home>
@@ -23,7 +30,10 @@ function App() {
                 return (
                     <Menu></Menu>
                 )
-
+            case 'favorite':
+                return (
+                    <Favorite></Favorite>
+                )
             default:
                 return (
                     <Home></Home>
@@ -41,14 +51,10 @@ function App() {
             </div>
             
             <NavBar>
-                <NavItem icon="home" label="ホーム" onClick={() =>{
-                    console.log(navState)
-                    setNavState("home")
-
-                }} key={"home"}/>
-                <NavItem icon="menu_book" label="メニュー" key="menu" onClick={() => setNavState("menu")} />
-                <NavItem icon="favorite" label="お気に入り" key="favorite" onClick={() => setNavState("favorite")} />
-                <NavItem icon="qr_code" label="食券" key="ticket" />
+                <NavItem icon="home" label="ホーム"  navKey="home" />
+                <NavItem icon="menu_book" label="メニュー" navKey="menu" />
+                <NavItem icon="favorite" label="お気に入り" navKey="favorite" />
+                <NavItem icon="qr_code" label="食券" navKey="ticket" />
 
             </NavBar>
             {/*

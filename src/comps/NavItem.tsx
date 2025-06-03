@@ -4,18 +4,17 @@ import {navStateAtom} from "../atoms.ts";
 type NavItemProps = {
     icon: string
     label: string
-    key: string
+    navKey: "home" | "menu" | "favorite" | "ticket"
 
-    onClick?: () => void
 }
 
-export const NavItem = ({ icon, label, onClick,key }: NavItemProps) => {
+export function NavItem  ({ icon, label,navKey }: NavItemProps){
     const [navState, setNavState] = useAtom(navStateAtom)
-    console.log(key)
+    console.log(navKey)
     return (
         <div className={
-            navState==key?"navbarItem focused":"navbarItem"
-        } onClick={()=>console.log(key)}>
+            navState==navKey?"navbarItem focused":"navbarItem"
+        } onClick={()=>setNavState(navKey)}>
             <div className="navbarItemIcon"><span
                 className="material-symbols-rounded">{icon}</span>
             </div>

@@ -19,6 +19,7 @@
     border-radius: 99px;
 }
 .appBarBtn span {
+    margin-top: 0.35vw;
     color: #EC473D;
     font-size:10vw;
 }
@@ -66,41 +67,41 @@ body {
 }
 
 .navbarItemIcon {
-
-    color: #EC473D;
-    height: 32px;
+    height: 30px;
 }
 
 .navbarItemIcon span {
+
     font-size: 38px;
 }
 
 .navbarItem {
+    color: #FEA19C;
     text-align: center;
     width: 70px;
     
 }
-.navbarItem.focused {
-    background: #ceebff;
+.navbarItem.focused{
+    color: #EC473D;
+
 }
 
 .navbarItemTitle {
-    color: #EC473D;
     font-size: 13px;
     overflow: visible;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .navbar {
     font-weight: normal;
-    padding: 15px 10px;
+    padding: 12px 10px;
     position: fixed;
-    width: 85vw;
+    width: 86vw;
     border-radius: 99px;
-    height: 60px;
+    height: 56px;
     
     background: #FFF8F7;
-    bottom: 25px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
