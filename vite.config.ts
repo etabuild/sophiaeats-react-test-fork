@@ -15,7 +15,7 @@ export default defineConfig({
                 short_name: 'SophiaEats',
                 display: 'fullscreen',
                 description: '上智大学食券販売アプリ',
-                theme_color: '#EC473D',
+                theme_color: '#FEA19C',
                 icons: [
                     {
                         src: './src/assets/pwa-icons/pwa-icon-192x192.png',
