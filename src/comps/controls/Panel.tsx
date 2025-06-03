@@ -32,7 +32,7 @@ export function Panel({size, title, subtitle, keyColor}: PanelItemProps) {
                     <p style={{
                         margin: 0,
                         color: '#fff',
-                        fontWeight: '200',
+                        fontWeight: '400',
                         position: 'relative',
                         top: '10px'
                     }}>{subtitle}</p>

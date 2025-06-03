@@ -12,12 +12,19 @@ export function Home(){
                     <Panel size={'large'} title={'9CAFE'} subtitle={'9号館地下'} keyColor={'#FF972F'} />
 
                 </XScrollPanels>
+                <div className={'menuSection'}>
+                <p className={"menuSectionTitle"}>おすすめメニュー</p>
+
                 <CardGridView>
                     <CardMenu></CardMenu>
                     <CardMenu></CardMenu>
                     <CardMenu></CardMenu>
-
-                </CardGridView>
+                    <CardMenu></CardMenu>
+                    <CardMenu></CardMenu>
+                    <CardMenu></CardMenu>
+                    <CardMenu></CardMenu>
+                    <CardMenu></CardMenu>
+                </CardGridView></div>
             </div>
 
         </>

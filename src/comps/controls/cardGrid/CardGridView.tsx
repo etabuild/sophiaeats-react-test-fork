@@ -8,7 +8,6 @@ export function CardGridView({children}:{children:React.ReactNode}) {
                 flexWrap: 'wrap',
                 gap: '4vw',
                 alignContent: 'flex-start',
-                padding: '8vw'
             }}>
                 {children}
             </div>

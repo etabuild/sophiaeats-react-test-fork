@@ -9,6 +9,7 @@ import {Favorite} from './comps/Favorite'
 import { NavItem } from './comps/NavItem'
 import { AppBar } from './comps/AppBar'
 import { Menu } from './comps/Menu'
+import {Modal} from "./comps/controls/modal/Modal.tsx";
 function App() {
 
 
@@ -42,6 +43,7 @@ function App() {
     }
     return (
         <>
+            {/*<Modal></Modal>*/}
         <AppBar></AppBar>
 
             <div className="mainView">
