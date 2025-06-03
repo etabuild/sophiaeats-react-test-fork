@@ -27,6 +27,8 @@
     background-color: #ffbcb9;
 }
 .appBar{
+    background-color: #FFE6CE;
+    z-index: 40;
     display: flex;
     justify-content: space-between;
 /*     background-color: #fff;
@@ -93,6 +95,7 @@ body {
 }
 
 .navbar {
+    backdrop-filter: blur(30px);
     font-weight: normal;
     padding: 12px 10px;
     width: 86vw;
@@ -100,7 +103,7 @@ body {
     height: 56px;
     /*border: solid 2px;*/
     /*border-image: linear-gradient(0deg, #888 0%, #fff 100%) 1;*/
-    background: #FFF8F7;
+    background: #fff8f7b4;
 
     display: flex;
     justify-content: space-around;

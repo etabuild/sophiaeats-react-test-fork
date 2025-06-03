@@ -11,11 +11,12 @@ export function Panel({size, title, subtitle, keyColor}: PanelItemProps) {
         <>
             <div className={`panel`}
                  style={{
+                    backdropFilter: 'blur(30px)',
                      scrollSnapAlign: 'start',
                      minWidth: '230px',
                      height: '230px',
                      borderRadius: '30px',
-                     background: keyColor,
+                     background: keyColor+'ff',
                      // background: 'linear-gradient(0deg,'+keyColor+'FF 0%, '+keyColor+'00 100%) #fff',
                      border: 'none 1px #666',
                      boxShadow: '0px 0px 5px rgba(0,0,0,0.3)',
