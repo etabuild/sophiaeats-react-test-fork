@@ -8,5 +8,7 @@ type NavbarProps = {
 export const NavBar = ({ children }:
     NavbarProps) => {
 
-    return <div className='navbar'>{children}</div>
+    return (
+        <div className="navBarBorder">
+            <div className='navbar'>{children}</div></div>)
 }

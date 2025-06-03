@@ -87,29 +87,36 @@ body {
 }
 
 .navbarItemTitle {
-    font-size: 13px;
+    font-size: 12px;
     overflow: visible;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .navbar {
     font-weight: normal;
     padding: 12px 10px;
-    position: fixed;
     width: 86vw;
     border-radius: 99px;
     height: 56px;
-    
+    /*border: solid 2px;*/
+    /*border-image: linear-gradient(0deg, #888 0%, #fff 100%) 1;*/
     background: #FFF8F7;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBarBorder {
+    box-shadow: 0 4px 10px rgba(236, 71, 61, 0.75);
+
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 4px 10px rgba(236, 71, 61, 0.75);
+    border-radius: 99px;
+    position: fixed;
+    background: linear-gradient(0deg, rgba(195, 58, 50, 0.75) 0%, #fff 100%) ;
+    padding: 3px
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
     a:nth-of-type(2) .logo {
