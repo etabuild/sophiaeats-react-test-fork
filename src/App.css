@@ -12,7 +12,7 @@
 .appBarBtn {
     background: none;
     border: none;
-    margin: 15px 0 0 12px;
+    margin: 8px 0 0 12px;
     width: 52px;
     height: 52px;
     padding: 3px;
@@ -36,13 +36,13 @@
     top:0;
     left:0;
     right:0;
-    height: 18vw;
+    height: 17vw;
     padding:4.5vw 4.5vw 3.5vw 3.5vw;
 
 }
 .appBarLogo{
 
-    height: 18vw;
+    height: 17vw;
 }
 .mainView {
     margin-top: 22vw
@@ -84,18 +84,53 @@ body {
     
 }
 
-.navbarItem.focused{
+.floating .navbarItem.focused{
     /*color: #EC473D;*/
     color: #fff;
 }
 
+.navbarItem.focused{
+    color: #EC473D;
+
+}
 .navbarItemTitle {
     font-size: 12px;
     overflow: visible;
     margin-top: 4px;
 }
+.navbar{
 
-.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 56px;
+
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    /*background: #FFFFFF55;*/
+    padding: 15px 16px;
+    /*border-top: solid 1px #FEA19C;*/
+    /*box-shadow: 0px 0px 20px #00000033;*/
+    z-index: 44;
+}
+.navbar::before {
+    display: block;
+    content: '';
+    height: 70px;
+    width: 100vw;
+    bottom: 0px;
+    padding: 15px 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    backdrop-filter: blur(9px);
+    background-color: #FFE6CE;
+    z-index: -1;
+    mask-image:
+            linear-gradient(to top, rgb(0 0 0 / 100%) 40%, rgb(0 0 0 / 8%) 93%, rgb(0 0 0 / 0%) 100%)
+}
+.navbar.floating {
     /*backdrop-filter: blur(8px);*/
     font-weight: normal;
     padding: 8px 10px;
@@ -105,21 +140,24 @@ body {
     /*border: solid 2px;*/
     /*border-image: linear-gradient(0deg, #888 0%, #fff 100%) 1;*/
     /*background: #fff8f7b4;*/
+
     background: #EC473D;
     display: flex;
     box-shadow: 0 4px 15px rgba(156, 156, 156, 0.589);
     justify-content: space-around;
     border: solid 2px #FEA19C;
+
+    border-radius: 99px;
 }
 
 .navBarBorder {
 /*     box-shadow: 0 4px 10px rgba(236, 71, 61, 0.75);
  */
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 99px;
-    position: fixed;
+    /*bottom: 12px;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*border-radius: 99px;*/
+    /*position: fixed;*/
 /*     background: linear-gradient(0deg, rgba(195, 58, 50, 0.75) 0%, #fff 100%) ;
  */    padding: 3px
 }
@@ -133,7 +171,7 @@ body {
     padding: 6vw;
 }
 .mainView {
-    overflowY: scroll;
+    overflow-y: scroll;
 }
 
 @media (prefers-reduced-motion: no-preference) {

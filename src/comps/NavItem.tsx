@@ -15,8 +15,8 @@ export function NavItem  ({ icon, label,navKey }: NavItemProps){
         <div className={
             navState==navKey?"navbarItem focused":"navbarItem"
         } onClick={()=>setNavState(navKey)}>
-            <div className="navbarItemIcon"><span
-                className="material-symbols-rounded">{icon}</span>
+            <div className="navbarItemIcon">
+                <span className="material-symbols-rounded">{icon}</span>
             </div>
             <div className="navbarItemTitle">{label}
             </div>
