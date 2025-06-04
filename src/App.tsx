@@ -43,7 +43,7 @@ function App() {
     }
     return (
         <>
-            {/*<Modal></Modal>*/}
+            <Modal />
         <AppBar></AppBar>
 
             <div className="mainView">

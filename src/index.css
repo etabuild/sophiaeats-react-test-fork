@@ -2,6 +2,7 @@ body,html {
     margin: 0;
     padding: 0;
     background: #FFE6CE;
+    user-select: none;
 }
 /*:root {*/
 /*  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;*/

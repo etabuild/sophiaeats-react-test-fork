@@ -1,12 +1,16 @@
+import {useModal} from "../modal/Modal.tsx";
+
 export function CardMenu() {
+    const {openModal} = useModal()
     return(
         <>
             <div style={{
-                width: '40vw',
+                width: '42vw',
                 height: '40vw',
                 borderRadius: '14px',
                 background:'white',
                 position: 'relative',
+                margin: 'auto',
                 boxShadow: '0 0 10px #00000044',
 
             }}>
@@ -48,6 +52,15 @@ export function CardMenu() {
                         border:'none',
                         borderRadius: '8vw',
                         margin: 'auto auto',
+                    }}
+                    onClick={()=>{
+                        openModal(
+                            <>
+                                <p>
+                                    商品をカートに追加しました
+                                </p>
+                            </>
+                        )
                     }}>
                         <span className={"material-symbols-rounded"}>
                             add

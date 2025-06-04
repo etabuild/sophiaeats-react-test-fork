@@ -153,6 +153,9 @@ body {
     border-radius: 99px;
     z-index: 20;
 }
+.home{
+    overflow-y: scroll;
+}
 .blurObj {
     display: block;
     content: '';

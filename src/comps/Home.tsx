@@ -24,6 +24,8 @@ export function Home(){
                     <CardMenu></CardMenu>
                     <CardMenu></CardMenu>
                     <CardMenu></CardMenu>
+                    <CardMenu></CardMenu>
+                    <CardMenu></CardMenu>
                 </CardGridView></div>
             </div>
 
