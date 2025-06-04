@@ -9,5 +9,6 @@ export const NavBar = ({ children }:
     NavbarProps) => {
 
     return (
-            <div className='navbar'>{children}</div>)
+        <>        <div className={'blurObj'}></div>
+            <div className='navbar floating'>{children}</div></>)
 }

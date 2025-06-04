@@ -13,8 +13,8 @@ export function Panel({size, title, subtitle, keyColor}: PanelItemProps) {
                  style={{
                     backdropFilter: 'blur(30px)',
                      scrollSnapAlign: 'start',
-                     minWidth: '230px',
-                     height: '230px',
+                     minWidth: '210px',
+                     height: '210px',
                      borderRadius: '30px',
                      background: keyColor+'ff',
                      // background: 'linear-gradient(0deg,'+keyColor+'FF 0%, '+keyColor+'00 100%) #fff',
