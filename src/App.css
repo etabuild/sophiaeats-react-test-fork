@@ -85,8 +85,8 @@ body {
 }
 
 .navbarItem.focused{
-    color: #EC473D;
-
+    /*color: #EC473D;*/
+    color: #fff;
 }
 
 .navbarItemTitle {
@@ -96,30 +96,32 @@ body {
 }
 
 .navbar {
-    backdrop-filter: blur(30px);
+    /*backdrop-filter: blur(8px);*/
     font-weight: normal;
-    padding: 12px 10px;
+    padding: 8px 10px;
     width: 86vw;
     border-radius: 99px;
     height: 56px;
     /*border: solid 2px;*/
     /*border-image: linear-gradient(0deg, #888 0%, #fff 100%) 1;*/
-    background: #fff8f7b4;
-
+    /*background: #fff8f7b4;*/
+    background: #EC473D;
     display: flex;
+    box-shadow: 0 4px 15px rgba(156, 156, 156, 0.589);
     justify-content: space-around;
+    border: solid 2px #FEA19C;
 }
 
 .navBarBorder {
-    box-shadow: 0 4px 10px rgba(236, 71, 61, 0.75);
-
-    bottom: 20px;
+/*     box-shadow: 0 4px 10px rgba(236, 71, 61, 0.75);
+ */
+    bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 99px;
     position: fixed;
-    background: linear-gradient(0deg, rgba(195, 58, 50, 0.75) 0%, #fff 100%) ;
-    padding: 3px
+/*     background: linear-gradient(0deg, rgba(195, 58, 50, 0.75) 0%, #fff 100%) ;
+ */    padding: 3px
 }
 
 .menuSectionTitle{
@@ -129,6 +131,9 @@ body {
 }
 .menuSection{
     padding: 6vw;
+}
+.mainView {
+    overflowY: scroll;
 }
 
 @media (prefers-reduced-motion: no-preference) {
