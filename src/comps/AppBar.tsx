@@ -15,7 +15,9 @@ export function AppBar(){
                 <button className="appBarBtn focused" onClick={()=>{
                     navigate('/cart/')
                 }}>
+                    <p className={"cartItemCountIndicator"}>9</p>
                     <span className="material-symbols-rounded">
+
                         shopping_cart
                     </span>
                 </button>

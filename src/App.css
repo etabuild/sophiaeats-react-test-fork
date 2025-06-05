@@ -8,6 +8,16 @@
     width: 100vw;
     overflow: hidden;
 }
+.cartItemCountIndicator{
+    position: absolute;
+    text-decoration: none;
+    left: 24px;
+    font-weight: bold;
+    top: 14px;
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}
 .appBarBtn {
     background: none;
     border: none;
@@ -16,6 +26,7 @@
     height: 52px;
     padding: 3px;
     border-radius: 99px;
+    position: relative;
 }
 .appBarBtn span {
     margin-top: 0.35vw;
@@ -162,12 +173,14 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #FFE6CE;
-    height: 160px;
+    /*background-color: red;*/
+    background-color: #FFE6CE55;
+    height: 120px;
     width: 100vw;
-    backdrop-filter: blur(9px);
+    /*backdrop-filter: blur(10px);*/
     mask-image:
-            linear-gradient(to top, rgb(0 0 0 / 100%) 50%, rgb(0 0 0 / 8%) 93%, rgb(0 0 0 / 0%) 100%)
+            /*linear-gradient(to top, rgb(0 0 0 / 100%) 50%, rgb(0 0 0 / 8%) 93%, rgb(0 0 0 / 0%) 100%)*/
+            linear-gradient(to top, rgb(0 0 0 / 100%) 85%,  rgb(0 0 0 / 0%) 100%)
 
 }
 
