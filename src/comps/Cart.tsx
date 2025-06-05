@@ -25,7 +25,18 @@ export const Cart = () => {
                             <p className={"menuPrice"}>¥9999</p>
 
                             <button>
-                                <i className={"material-symbols-rounded"}>close</i>
+                                <i className={"material-symbols-rounded"}>delete</i>
+                            </button>
+                        </div>
+
+                        <div className={"inCartItem"}>
+                            <div className={"menuImg"}></div>
+                            <p className={"menuTitle"}>オフピークカツカレー</p>
+
+                            <p className={"menuPrice"}>¥9999</p>
+
+                            <button>
+                                <i className={"material-symbols-rounded"}>delete</i>
                             </button>
                         </div>
                         <div className={"inCartItem"}>
@@ -35,7 +46,7 @@ export const Cart = () => {
                             <p className={"menuPrice"}>¥9999</p>
 
                             <button>
-                                <i className={"material-symbols-rounded"}>close</i>
+                                <i className={"material-symbols-rounded"}>delete</i>
                             </button>
                         </div>
                         <div className={"inCartItem"}>
@@ -45,17 +56,7 @@ export const Cart = () => {
                             <p className={"menuPrice"}>¥9999</p>
 
                             <button>
-                                <i className={"material-symbols-rounded"}>close</i>
-                            </button>
-                        </div>
-                        <div className={"inCartItem"}>
-                            <div className={"menuImg"}></div>
-                            <p className={"menuTitle"}>オフピークカツカレー</p>
-
-                            <p className={"menuPrice"}>¥9999</p>
-
-                            <button>
-                                <i className={"material-symbols-rounded"}>close</i>
+                                <i className={"material-symbols-rounded"}>delete</i>
                             </button>
                         </div>
 
