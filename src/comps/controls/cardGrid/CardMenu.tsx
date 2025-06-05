@@ -41,10 +41,9 @@ export function CardMenu() {
                     }}>¥450</p>
                     <button style={{
                         color: '#EC473D',
-                        backgroundColor: '#FFCE9F',
+                        background: '#ffd8b3',
                         gridRow: '1/3',
                         gridColumn: '2/3',
-                        background:'none',
                         height: '7vw',
                         width: '7vw',
                         fontSize: '7vw',

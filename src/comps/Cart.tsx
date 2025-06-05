@@ -16,71 +16,78 @@ export const Cart = () => {
                         </button>
                     </div>
                 </div>
+                <div className={"cartContent"}>
+                    <div className={"inCartItemSection"}>
+                        <div className={"inCartItem"}>
+                            <div className={"menuImg"}></div>
+                            <p className={"menuTitle"}>オフピークカツカレー</p>
 
-                <div className={"inCartItemSection"}>
-                    <div className={"inCartItem"}>
-                        <div className={"menuImg"}></div>
-                        <p className={"menuTitle"}>オフピークカツカレー</p>
+                            <p className={"menuPrice"}>¥9999</p>
 
-                        <p className={"menuPrice"}>¥9999</p>
+                            <button>
+                                <i className={"material-symbols-rounded"}>close</i>
+                            </button>
+                        </div>
+                        <div className={"inCartItem"}>
+                            <div className={"menuImg"}></div>
+                            <p className={"menuTitle"}>オフピークカツカレー</p>
 
-                        <button>
-                            <i className={"material-symbols-rounded"}>close</i>
-                        </button>
+                            <p className={"menuPrice"}>¥9999</p>
+
+                            <button>
+                                <i className={"material-symbols-rounded"}>close</i>
+                            </button>
+                        </div>
+                        <div className={"inCartItem"}>
+                            <div className={"menuImg"}></div>
+                            <p className={"menuTitle"}>オフピークカツカレー</p>
+
+                            <p className={"menuPrice"}>¥9999</p>
+
+                            <button>
+                                <i className={"material-symbols-rounded"}>close</i>
+                            </button>
+                        </div>
+                        <div className={"inCartItem"}>
+                            <div className={"menuImg"}></div>
+                            <p className={"menuTitle"}>オフピークカツカレー</p>
+
+                            <p className={"menuPrice"}>¥9999</p>
+
+                            <button>
+                                <i className={"material-symbols-rounded"}>close</i>
+                            </button>
+                        </div>
+                        <div className={"inCartItem"}>
+                            <div className={"menuImg"}></div>
+                            <p className={"menuTitle"}>オフピークカツカレー</p>
+
+                            <p className={"menuPrice"}>¥9999</p>
+
+                            <button>
+                                <i className={"material-symbols-rounded"}>close</i>
+                            </button>
+                        </div>
+                        <div className={"inCartItem"}>
+                            <div className={"menuImg"}></div>
+                            <p className={"menuTitle"}>オフピークカツカレー</p>
+
+                            <p className={"menuPrice"}>¥9999</p>
+
+                            <button>
+                                <i className={"material-symbols-rounded"}>close</i>
+                            </button>
+                        </div>
+
+
                     </div>
-                    <div className={"inCartItem"}>
-                        <div className={"menuImg"}></div>
-                        <p className={"menuTitle"}>オフピークカツカレー</p>
-
-                        <p className={"menuPrice"}>¥9999</p>
-
-                        <button>
-                            <i className={"material-symbols-rounded"}>close</i>
-                        </button>
+                    <div className={"totalPriceSection"}>
+                        <p className={"totalPriceLabel"}>合計</p>
+                        <p className={"totalPriceNumber"}>¥9999</p>
                     </div>
-                    <div className={"inCartItem"}>
-                        <div className={"menuImg"}></div>
-                        <p className={"menuTitle"}>オフピークカツカレー</p>
-
-                        <p className={"menuPrice"}>¥9999</p>
-
-                        <button>
-                            <i className={"material-symbols-rounded"}>close</i>
-                        </button>
-                    </div>
-                    <div className={"inCartItem"}>
-                        <div className={"menuImg"}></div>
-                        <p className={"menuTitle"}>オフピークカツカレー</p>
-
-                        <p className={"menuPrice"}>¥9999</p>
-
-                        <button>
-                            <i className={"material-symbols-rounded"}>close</i>
-                        </button>
-                    </div>
-                    <div className={"inCartItem"}>
-                        <div className={"menuImg"}></div>
-                        <p className={"menuTitle"}>オフピークカツカレー</p>
-
-                        <p className={"menuPrice"}>¥9999</p>
-
-                        <button>
-                            <i className={"material-symbols-rounded"}>close</i>
-                        </button>
-                    </div>
-                    <div className={"inCartItem"}>
-                        <div className={"menuImg"}></div>
-                        <p className={"menuTitle"}>オフピークカツカレー</p>
-
-                        <p className={"menuPrice"}>¥9999</p>
-
-                        <button>
-                            <i className={"material-symbols-rounded"}>close</i>
-                        </button>
-                    </div>
-
-
                 </div>
+                <button>もっと選ぶ</button>
+                <button>決済へ進む</button>
             </div>
         </>
     )

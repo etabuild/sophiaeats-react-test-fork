@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import {Home} from './comps/Home'
+
 import './assets/fonts/Fonts.css'
 import './App.css'
 import {useAtom, useAtomValue} from 'jotai'
