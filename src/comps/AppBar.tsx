@@ -1,5 +1,7 @@
 import logo from "../assets/logo/logo-with-text.svg"
+import {useNavigate} from "react-router-dom";
 export function AppBar(){
+    const navigate = useNavigate();
     return(
         <>
         <div className="appBar">
@@ -10,7 +12,9 @@ export function AppBar(){
                         language
                     </span>
                 </button>
-                <button className="appBarBtn focused">
+                <button className="appBarBtn focused" onClick={()=>{
+                    navigate('/cart/')
+                }}>
                     <span className="material-symbols-rounded">
                         shopping_cart
                     </span>

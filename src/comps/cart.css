@@ -1,0 +1,88 @@
+.cartRoot {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.cartHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25vw;
+    text-align: center;
+    color:#EC473D;
+}
+.cartHeader p {
+    margin: 7vw 0 0 0;
+}
+.cartHeader p span {
+    display: inline-block;
+
+    font-size: 6.5vw;
+    margin-left:  2vw;
+    vertical-align: 3vw;
+
+}
+.cartHeader p i {
+    font-size: 11vw;
+}
+.cartHeaderCloseBtnWrapper {
+    height: 25vw;
+    width: 25vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.cartHeaderCloseBtn {
+    height: 50%;
+    width: 50%;
+    margin: 25%;
+    border-radius: 999px;
+    border: none;
+    background: none;
+    color: #EC473D;
+}
+.cartHeaderCloseBtn i {
+    font-size: 9vw;
+}
+.inCartItemSection{
+    width: 75%;
+    height: 50%;
+    background: #FFF;
+    margin: 25vw auto;
+    border-radius: 20px;
+    padding: 10px 20px;
+    overflow: scroll;
+
+}
+.inCartItem {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 80px 1fr 40px;
+    grid-template-rows: 1fr 1fr;
+    height: 80px;
+}
+.inCartItem .menuImg{
+    border: 1px solid #EC473D;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.inCartItem .menuTitle{
+    margin: 0 0 0 20px;
+}
+.inCartItem .menuPrice {
+
+    margin: 0 0 0 20px;
+    font-weight: 600;
+    font-size: 5vw;
+    grid-column: 2/3;
+}
+.inCartItem+ .inCartItem {
+    border-top: 1px solid #EC473D;
+
+}
+.inCartItem .menuTitle {
+    margin: 0;
+}
