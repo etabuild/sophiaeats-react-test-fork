@@ -35,7 +35,8 @@ export function Modal() {
                     width: '80vw',
                     height: '380px',
                     background: '#FFE6CE',
-                    borderRadius: '25px',
+                    borderRadius: '35px',
+
                     left: '50%',
                     top: '50%',
                     transform: 'translateX(-50%) translateY(-50%)',
@@ -48,7 +49,7 @@ export function Modal() {
                         width: '100%',
                         height: '50px',
                     }}>
-                       <button style={{
+                      {/* <button style={{
                             position: 'absolute',
                             right: 0,
                             height: '40px',
@@ -64,7 +65,7 @@ export function Modal() {
                         <span className={"material-symbols-rounded"}>
                             close
                         </span>
-                        </button>
+                        </button>*/}
                     </div>
                     {modalContent}
                 </div>

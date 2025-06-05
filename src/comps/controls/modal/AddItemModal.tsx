@@ -6,7 +6,12 @@ export const AddItemModal=()=>{
     const navigate = useNavigate()
     return(
         <>
-            <p>
+            <p style={{
+                textAlign: "center",
+                fontSize: "19px",
+                color: "#EC473D",
+                fontWeight: "bold",
+            }}>
                 商品をカートに追加しました </p>
             <div style={{
                 width: '55vw',
@@ -46,7 +51,8 @@ export const AddItemModal=()=>{
             <div style={{
                 position: 'absolute',
                 bottom: '10px',
-                width: '95%'
+                width: '95%',
+                left: '2.5%'
             }}
                  className={"proceedBtnSection"}>
                 <button className={"btnBack"} onClick={()=>{
