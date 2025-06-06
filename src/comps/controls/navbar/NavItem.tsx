@@ -1,5 +1,5 @@
 import {useAtom} from "jotai/index";
-import {navStateAtom} from "../atoms.ts";
+import {navStateAtom} from "../../../atoms.ts";
 
 type NavItemProps = {
     icon: string

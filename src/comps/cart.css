@@ -60,7 +60,11 @@
 
 }
 .inCartItem .menuImg{
-    border: 1px solid #565656;
+    border:none;
+    /*
+    background-size: contain;
+    */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 14px;
     border-radius: 20px;
     width: 78%;
     height: 78%;

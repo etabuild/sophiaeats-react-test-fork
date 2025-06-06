@@ -1,7 +1,7 @@
 import {useModal} from "../modal/Modal.tsx";
 import {AddItemModal} from "../modal/AddItemModal.tsx";
 
-export function CardMenu() {
+export function CardMenu({ imgSrc, name,price }: {imgSrc: string, name: string , price: number}) {
     const {openModal} = useModal()
     return (
         <>
@@ -9,7 +9,8 @@ export function CardMenu() {
                 width: '42vw',
                 height: '40vw',
                 borderRadius: '14px',
-                background: 'white',
+                background: `url(${imgSrc})`,
+                backgroundSize: 'cover',
                 position: 'relative',
                 margin: 'auto',
                 boxShadow: '0 0 10px #00000044',
@@ -32,14 +33,14 @@ export function CardMenu() {
                         fontSize: '3.5vw',
                         lineHeight: '2.7',
                         paddingLeft: '15px'
-                    }}>メニュー</p>
+                    }}>{name}</p>
                     <p style={{
                         margin: 0,
                         lineHeight: '0.9',
                         fontSize: '5.4vw',
                         paddingLeft: '15px',
                         fontWeight: 'bold',
-                    }}>¥450</p>
+                    }}>¥{price}</p>
                     <button style={{
                         color: '#EC473D',
                         background: '#ffd8b3',

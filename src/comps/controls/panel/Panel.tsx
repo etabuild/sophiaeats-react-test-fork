@@ -3,9 +3,10 @@ type PanelItemProps = {
     title: string
     subtitle: string
     keyColor: string
+    imgSrc: string
 }
 
-export function Panel({size, title, subtitle, keyColor}: PanelItemProps) {
+export function Panel({size, title, subtitle, keyColor, imgSrc}: PanelItemProps) {
     console.log(title)
     return (
         <>
@@ -16,8 +17,10 @@ export function Panel({size, title, subtitle, keyColor}: PanelItemProps) {
                      minWidth: '210px',
                      height: '210px',
                      borderRadius: '30px',
-                     background: keyColor+'ff',
-                     // background: 'linear-gradient(0deg,'+keyColor+'FF 0%, '+keyColor+'00 100%) #fff',
+                     //backgroundImage: `url(${imgSrc})`,
+                     //background: keyColor+'ff',
+                     backgroundSize: 'cover',
+                      background: `linear-gradient(0deg,${keyColor}FF 20%, ${keyColor}DD 60%,${keyColor}77 100%),  url(${imgSrc})`,
                      border: 'none 1px #666',
                      boxShadow: '0px 0px 5px rgba(0,0,0,0.3)',
                      display: 'inline-block',
