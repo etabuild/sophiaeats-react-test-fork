@@ -42,7 +42,9 @@ export const Cart = () => {
                     </div>
                     <div className={"totalPriceSection"}>
                         <p className={"totalPriceLabel"}>合計</p>
-                        <p className={"totalPriceNumber"}>¥9999</p>
+                        <p className={"totalPriceNumber"}>¥{
+                            list[0].price + list[1].price + list[2].price
+                        }</p>
                     </div>
                 </div>
                 <div className={"proceedBtnSection"}>
