@@ -7,7 +7,6 @@ import {CardGrid} from "../components/ui/CardGrid";
 import {DishMenuCard} from "../features/dish-menu/components/DishMenuCard";
 import {useAtomValue} from "jotai/index";
 import {navStateAtom} from "../atoms.ts";
-import {Ticket} from "../comps/Ticket.tsx";
 import {MenuBook} from "../route/navigation/MenuBook";
 import {Favorite} from "../route/navigation/Favorite";
 import {Tickets} from "../route/navigation/Tickets";

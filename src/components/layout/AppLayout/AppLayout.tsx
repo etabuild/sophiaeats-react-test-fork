@@ -1,7 +1,6 @@
 import {AppBar} from "../AppBar";
 import {NavBar} from "../NavBar";
 import {NavItem} from "../NavItem";
-import {Home} from "../../../comps/Home.tsx";
 import styles from "./AppLayout.module.css"
 
 export const AppLayout = ({children}: { children:React.ReactNode }) => {

@@ -1,5 +1,5 @@
 import {useModal} from "../modal/Modal.tsx";
-import {AddItemModal} from "../modal/AddItemModal.tsx";
+import {AddItemModal} from "../../../features/pick-dish/components/AddItemModal/AddItemModal.tsx";
 
 export function CardMenu({ imgSrc, name,price }: {imgSrc: string, name: string , price: number}) {
     const {openModal} = useModal()

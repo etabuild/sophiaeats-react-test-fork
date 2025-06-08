@@ -1,13 +1,12 @@
 import './cart.css'
-import {useNavigate} from "react-router-dom";
+import type {DishMenuItem} from "../../features/dish-menu/type.ts";
+import type {NavigateFunction} from "react-router-dom";
+type CartProps = {
+    navigate: NavigateFunction;
+    list: DishMenuItem[]
+}
+export const Cart = ({navigate, list}:CartProps) => {
 
-export const Cart = () => {
-    const navigate = useNavigate();
-    const list = [
-        {name: '鶏唐揚げ定食', price: 550, imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaNt5ObLITauyY8OnKHSmXlvIkAOYVIVLMw&s'},
-        {name: 'カツカレー', price: 450, imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Katsu-curry_003.jpg'},
-        {name: 'イーグルランチ', price: 480, imgSrc:'https://upload.wikimedia.org/wikipedia/commons/a/a8/Salad_platter02_crop.jpg'}
-    ]
     return (
         <>
             <div className={"cartRoot"}>
@@ -25,8 +24,8 @@ export const Cart = () => {
                     <div className={"inCartItemSection"}>
                         {list.map((item, i) => (
                             <div className={"inCartItem"} key={i}>
-                                <div style={{background: `url(${item.imgSrc})`, backgroundSize: 'cover'}} className={"menuImg"}></div>
-                                <p className={"menuTitle"}>{item.name}</p>
+                                <div style={{background: `url()`, backgroundSize: 'cover'}} className={"menuImg"}></div>
+                                <p className={"menuTitle"}>{item.name_ja}</p>
 
                                 <p className={"menuPrice"}>¥{item.price}</p>
 
@@ -43,7 +42,7 @@ export const Cart = () => {
                     <div className={"totalPriceSection"}>
                         <p className={"totalPriceLabel"}>合計</p>
                         <p className={"totalPriceNumber"}>¥{
-                            list[0].price + list[1].price + list[2].price
+
                         }</p>
                     </div>
                 </div>

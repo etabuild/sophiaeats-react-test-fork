@@ -1,5 +1,7 @@
 import {Home} from './Home.tsx'
+import {useDishMenu} from "../../../features/dish-menu/hooks/DishMenuHook.tsx";
 export const HomeContainer = ()=>{
+    const {loadingDishMenu, dishMenuList} = useDishMenu()
     const list = [{
         name: 'たぬきうどん',
         price: 330,
@@ -33,6 +35,6 @@ export const HomeContainer = ()=>{
         },
     ]
     return(
-        <Home dishMenuList={list}/>
+        <Home dishMenuList={dishMenuList}/>
     )
 }

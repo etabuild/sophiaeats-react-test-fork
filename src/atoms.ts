@@ -8,4 +8,4 @@ export const isOpenModalAtom = atom<boolean>(false)
 export const authStateAtom = atom<{
     uid: string | undefined
 }>({uid: undefined})
-export const dbAtom = atom();
+export const inCartItemAtom = atom<{itemId: string, amount: number}[]>([])

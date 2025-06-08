@@ -5,9 +5,10 @@ import {CardMenu} from "../../../comps/ui/cardGrid/CardMenu.tsx";
 import {CardGrid} from "../../../components/ui/CardGrid";
 import {DishMenuCard} from "../../../features/dish-menu/components/DishMenuCard";
 import {XScrollView} from "../../../components/ui/XScrollView";
+import type {DishMenuItem} from "../../../features/dish-menu/type.ts";
 
 export const Home = ({dishMenuList}:{
-    dishMenuList: {name:string,price:number,imgSrc:string}[]
+    dishMenuList: DishMenuItem[]
 }) => {
     return(
         <>
@@ -28,7 +29,7 @@ export const Home = ({dishMenuList}:{
                     <CardGrid>
                         {dishMenuList.map((item, index) => {
                             return (
-                                <DishMenuCard imgSrc={item.imgSrc} name={item.name} price={item.price} key={index}></DishMenuCard>
+                                <DishMenuCard imgSrc={''} name={item.name_ja} price={item.price} key={index} id={item.id}></DishMenuCard>
 
                             )
                         })}
