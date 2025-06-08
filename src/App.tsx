@@ -1,13 +1,14 @@
 
 
 import './assets/fonts/Fonts.css'
-import './App.css'
+//import './App.css'
 
 import { Routes, Route} from 'react-router-dom'
-import {RootView} from "./RootView.tsx";
-import {Cart} from "./comps/Cart.tsx";
+import {RootView} from "./route/navigation/RootView.tsx";
+import {Cart} from "./route/Cart/Cart.tsx";
 import {useEffect} from "react";
 import {useAuth} from "./features/firebase/auth/Auth.tsx";
+import {Test} from "./test/Test.tsx";
 
 
 
@@ -24,7 +25,7 @@ function App() {
                 <Routes>
                     <Route path={"/"} element={<RootView />}/>
                     <Route path={"/cart"} element={<Cart />}/>
-
+                    <Route path={"/test"} element={<Test />} />
                 </Routes>
         </>
     );

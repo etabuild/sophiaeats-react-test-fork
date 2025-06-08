@@ -1,0 +1,46 @@
+.appBarBtn {
+    background: none;
+    border: none;
+    margin: 8px 0 0 12px;
+    width: 52px;
+    height: 52px;
+    padding: 3px;
+    border-radius: 99px;
+    position: relative;
+}
+.appBarBtn span {
+    margin-top: 0.35vw;
+    color: #EC473D;
+    font-size:10vw;
+}
+.appBarBtn:hover {
+    background-color: #ffbcb9;
+}
+.appBar{
+    background-color: #FFE6CE;
+    z-index: 40;
+    display: flex;
+    justify-content: space-between;
+    /*     background-color: #fff;
+     */    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 17vw;
+    padding:4.5vw 4.5vw 3.5vw 6vw;
+
+}
+.appBarLogo{
+
+    height: 17vw;
+}
+.cartItemCountIndicator{
+    position: absolute;
+    text-decoration: none;
+    left: 24px;
+    font-weight: bold;
+    top: 14px;
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}

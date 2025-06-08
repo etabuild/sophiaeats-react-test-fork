@@ -1,12 +1,10 @@
 
-import type { ReactNode } from 'react'
+import type {NavBarProps} from "../../../components/layout/NavBar";
 
-type NavbarProps = {
-    children: ReactNode
-}
+
 
 export const NavBar = ({ children }:
-    NavbarProps) => {
+    NavBarProps) => {
 
     return (
         <>        {/*<div className={'blurObj'}></div>*/}

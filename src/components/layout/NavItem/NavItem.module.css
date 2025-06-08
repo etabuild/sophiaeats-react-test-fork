@@ -1,0 +1,28 @@
+
+.navbarItemIcon {
+    height: 30px;
+}
+
+.navbarItemIcon span {
+
+    font-size: 35px;
+}
+
+.navbarItem {
+    color: #FEA19C;
+    text-align: center;
+    width: 70px;
+
+}
+
+.navbarItem.focused{
+    /*color: #EC473D;*/
+    color: #fff;
+}
+
+
+.navbarItemTitle {
+    font-size: 11.5px;
+    overflow: visible;
+    margin-top: 2px;
+}

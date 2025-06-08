@@ -1,0 +1,24 @@
+
+.navbar.floating {
+    /*backdrop-filter: blur(8px);*/
+    font-weight: normal;
+    padding: 10px 13px;
+    width: 78vw;
+    border-radius: 99px;
+    height: 52px;
+    /*border: solid 2px;*/
+    /*border-image: linear-gradient(0deg, #888 0%, #fff 100%) 1;*/
+    /*background: #fff8f7b4;*/
+
+    background: #EC473D;
+    display: flex;
+    box-shadow: 0 4px 15px rgba(156, 156, 156, 0.589);
+    justify-content: space-around;
+    border: solid 2px #FEA19C;
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 99px;
+    z-index: 20;
+}

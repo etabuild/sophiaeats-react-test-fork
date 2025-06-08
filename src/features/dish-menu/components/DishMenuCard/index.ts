@@ -1,0 +1,1 @@
+export {DishMenuCardContainer as DishMenuCard} from "./DishMenuCard.container.tsx"

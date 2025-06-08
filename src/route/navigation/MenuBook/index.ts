@@ -1,0 +1,1 @@
+export {MenuBookContainer as MenuBook} from "./MenuBookContainer.tsx"

@@ -1,0 +1,1 @@
+export {FavoriteContainer as Favorite} from "./FavoriteContainer.tsx"

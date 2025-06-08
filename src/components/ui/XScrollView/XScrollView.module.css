@@ -1,0 +1,7 @@
+.container{
+    scroll-snap-type: y mandatory;
+    padding: 15px 6vw;
+    gap: 20px;
+    display: flex;
+    overflow-x: scroll;
+}
