@@ -1,13 +1,21 @@
-import {XScrollPanels} from "./controls/panel/XScrollPanels.tsx";
-import {Panel} from "./controls/panel/Panel.tsx";
-import {CardGridView} from "./controls/cardGrid/CardGridView.tsx";
-import {CardMenu} from "./controls/cardGrid/CardMenu.tsx";
-
+import {XScrollPanels} from "./ui/panel/XScrollPanels.tsx";
+import {Panel} from "./ui/panel/Panel.tsx";
+import {CardGridView} from "./ui/cardGrid/CardGridView.tsx";
+import {CardMenu} from "./ui/cardGrid/CardMenu.tsx";
+import {useAtomValue} from "jotai/index";
+import {authStateAtom} from "../atoms.ts";
+import {useEffect} from "react";
+import {getDocs, collection} from "firebase/firestore"
+import {db} from "./../features/firebase/Firebase.tsx"
 export function Home() {
+    useEffect(() => {
+        const menuSnapshot =  getDocs(collection(db, "menu"))
+    },[])
+    const authState = useAtomValue(authStateAtom)
     const list = [{
         name: 'たぬきうどん',
         price: 330,
-        imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Nikuudon.jpg/250px-Nikuudon.jpg'
+        imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Nikuudon.jpg/250px-Nikuudon.jpg',
     },
         {
             name: '醬油ラーメン',
@@ -36,6 +44,7 @@ export function Home() {
             imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Katsu-curry_003.jpg'
         },
     ]
+
     return (
         <>
             <div className={"home"}>

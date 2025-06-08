@@ -1,13 +1,9 @@
 import {initializeApp} from "firebase/app"
+import {getAuth} from "firebase/auth"
 import {getFirestore} from "firebase/firestore"
 import {firebaseConfig} from "./firebaseConfig.ts";
-import {useAtom} from "jotai/index";
-import {dbAtom} from "../../atoms.ts";
-export const useFirebase = () => {
-    const [db, setDb] = useAtom(dbAtom)
-    const app = initializeApp(firebaseConfig)
 
-    const _db = getFirestore(app)
-    setDb(_db)
+export const app = initializeApp(firebaseConfig)
 
-}
+export const db = getFirestore(app)
+export const auth = getAuth(app)

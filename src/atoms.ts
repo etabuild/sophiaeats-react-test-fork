@@ -9,4 +9,3 @@ export const authStateAtom = atom<{
     uid: string | undefined
 }>({uid: undefined})
 export const dbAtom = atom();
-export const authAtom = atom();
