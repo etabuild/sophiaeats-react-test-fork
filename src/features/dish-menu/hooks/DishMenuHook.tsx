@@ -29,6 +29,14 @@ export const useDishMenu = () => {
         fetchData()
     },[])
 
+    const searchMenuById = (searchId: string) => {
+        const menuItem = dishMenuList.find(({id}) => id === searchId)
+        if(menuItem != undefined){
+            return menuItem
+        }else{
+            throw new Error("could not find the menu")
+        }
+    }
 
-    return{loadingDishMenu, dishMenuList}
+    return{loadingDishMenu, dishMenuList, searchMenuById}
 }

@@ -7,8 +7,9 @@ import {DishMenuCard} from "../../../features/dish-menu/components/DishMenuCard"
 import {XScrollView} from "../../../components/ui/XScrollView";
 import type {DishMenuItem} from "../../../features/dish-menu/type.ts";
 
-export const Home = ({dishMenuList}:{
-    dishMenuList: DishMenuItem[]
+export const Home = ({dishMenuList, isLoading}:{
+    dishMenuList: DishMenuItem[],
+    isLoading:boolean,
 }) => {
     return(
         <>
@@ -24,6 +25,7 @@ export const Home = ({dishMenuList}:{
 
                 </XScrollView>
                 <div className={'menuSection'}>
+                    {isLoading&&<p>読み込み中</p>}
                     <p className={"menuSectionTitle"}>おすすめメニュー</p>
 
                     <CardGrid>

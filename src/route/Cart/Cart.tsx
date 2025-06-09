@@ -13,13 +13,14 @@ type CartProps = {
         price?: number,
         shop?: string,
         amount: number
-    }[]
+    }[];
+    totalPrice: number;
 }
-export const Cart = ({navigate, list}: CartProps) => {
+export const Cart = ({navigate, list,totalPrice}: CartProps) => {
 
     return (
         <>
-            <PageLayout pageIcon={"shopping_cart"} pageTitle={"カート"} navigate={navigate}>
+            <PageLayout pageIcon={"shopping_cart"} pageTitle={"カート"} navigate={navigate} >
 
                 <div className={"inCartItemSection"}>
                     {list.map((item, i) => (
@@ -62,9 +63,7 @@ export const Cart = ({navigate, list}: CartProps) => {
                 </div>
                 <div className={"totalPriceSection"}>
                     <p className={"totalPriceLabel"}>合計</p>
-                    <p className={"totalPriceNumber"}>¥{
-
-                    }</p>
+                    <p className={"totalPriceNumber"}>¥{totalPrice}</p>
                 </div>
                 <div className={"proceedBtnSection"}>
                     <button className={"btnBack"}>もっと選ぶ</button>

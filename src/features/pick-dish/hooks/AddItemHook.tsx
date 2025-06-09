@@ -1,43 +1,61 @@
 import {useAtom} from "jotai/index";
 import {inCartItemAtom} from "../../../atoms.ts";
-import {useEffect} from "react";
+import {useDishMenu} from "../../dish-menu/hooks/DishMenuHook.tsx"
+import {useEffect, useState} from "react";
 
-export const useCart = ()=>{
+export const useCart = () => {
     const [inCartItem, setInCartItem] = useAtom(inCartItemAtom)
-
+    const {searchMenuById} = useDishMenu()
+    const [totalPrice, setTotalPrice] = useState<number>(0)
     useEffect(() => {
-        console.log("incartItem", inCartItem)
+/*        console.log("incartItem", inCartItem)
+        let _price = 0;
+
+        inCartItem.forEach((item) => {
+            _price = item.data.price*item.amount
+        })
+        setTotalPrice(_price)*/
+
     }, [inCartItem]);
     const pickItem = (id: string, amount: number) => {
-        const index = inCartItem.findIndex(({itemId}) => itemId === id)
+        const menu = searchMenuById(id);
+
+
+        const index = inCartItem.findIndex(({data}) => data.id === id)
         if (index > -1) {
-            setInCartItem((prev)=>{
+            setInCartItem((prev) => {
                 const _p = prev
                 _p[index] = {
-                    itemId: id,
+                    data: _p[index].data,
                     amount: _p[index].amount + amount
                 }
                 return _p
             })
-        }else{
-            console.log("追加中",id)
-            setInCartItem((prev)=>[...prev,{itemId:id, amount:amount}])
+        } else {
+            console.log("追加中", id)
+            setInCartItem((prev) =>
+                [...prev,
+                    {
+                        data: menu,
+                        amount: amount
+                    }
+                ])
         }
 
     }
-    const deleteItem = (id: string) => {
-        const index = inCartItem.findIndex(({itemId}) => itemId === id)
+    const deleteItem = (deleteId: string) => {
+        const index = inCartItem.findIndex(({data}) => data.id === deleteId)
         if (index > -1) {
-            setInCartItem((prev)=>{
+            setInCartItem((prev) => {
                 const _p = prev
                 _p.splice(index, 1)
                 return _p
             })
-        }else{
+        } else {
             throw new Error("indexがなかった")
 
         }
 
     }
-    return{pickItem, inCartItem, deleteItem}
+    return {pickItem, inCartItem, deleteItem, totalPrice}
 }

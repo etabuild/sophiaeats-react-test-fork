@@ -9,11 +9,12 @@ export const CartContainer = () => {
     useEffect(()=>{
 
     },[])
-    const {dishMenuList} = useDishMenu()
-    const {inCartItem, pickItem} = useCart()
+    const {dishMenuList, searchMenuById} = useDishMenu()
+    const {inCartItem, totalPrice} = useCart()
     const navigate = useNavigate();
     const inCartDishMenuList = inCartItem.map((item) =>{
-        const dishMenu = dishMenuList.find(({id})=> id === item.itemId)
+
+        const dishMenu = dishMenuList.find(({id})=> id === item.data.id)
         return{...dishMenu, amount: item.amount}
     }).filter(item=> item != undefined)
     const list = [
@@ -24,7 +25,7 @@ export const CartContainer = () => {
 
     return (
         <>
-            <Cart navigate={navigate} list={inCartDishMenuList} ></Cart>
+            <Cart navigate={navigate} list={inCartDishMenuList} totalPrice={totalPrice}></Cart>
         </>
     );
 };

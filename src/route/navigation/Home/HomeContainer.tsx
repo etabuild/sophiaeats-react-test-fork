@@ -35,6 +35,6 @@ export const HomeContainer = ()=>{
         },
     ]
     return(
-        <Home dishMenuList={dishMenuList}/>
+        <Home dishMenuList={dishMenuList} isLoading={loadingDishMenu} />
     )
 }
