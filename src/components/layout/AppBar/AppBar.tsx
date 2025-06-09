@@ -30,21 +30,44 @@ export const AppBar = ({cartButtonClicked}: AppBarProps) => {
 {/*
                 <div className={styles.blurObj}></div>
 */}
-                <LinearBlur
+                {/*        <LinearBlur
                     steps={8}
                     strength={64}
                     falloffPercentage={100}
                     tint="#FEF5EC99"
                     side={"top"}
                     style={{
+                        background: 'linear-gradient(0deg, #ffe4ce00 0%, #ffe4ceFF 60%)',
+                        background: '#ffe4ce',
+                        zIndex: 50,
                         position: "absolute",
                         bottom:' -20px',
                         left: 0,
                         right: 0,
                         height: '20px'
                     }}
-                ></LinearBlur>
+                ></LinearBlur> */}
+{/*                <LinearBlur
+                    steps={8}
+                    strength={64}
+                    falloffPercentage={100}
+                    tint="#FEF5EC99"
+                    side={"top"}
+                    style={{
+                        background: 'linear-gradient(0deg, #ffe4ce00 0%, #ffe4ceFF 60%)',
+                        background: '#ffe4ce',
+                        zIndex: 50,
+                        position: "absolute",
+                        bottom:' -20px',
+                        left: 0,
+                        right: 0,
+                        height: '20px'
+                    }}
+                ></LinearBlur>*/}
+  {/*              <div className={styles.blurObj}></div>
+                <div className={styles.gradObj}>
 
+                </div>*/}
             </div>
 
         </>

@@ -1,10 +1,10 @@
 .container {
     width: 42vw;
     height: 40vw;
-    border-radius: 14px;
+    border-radius: 20px;
     position: relative;
     margin: auto;
-    box-shadow: 0 0 10px #00000044;
+    box-shadow: 0 0 10px rgba(181, 143, 96, 0.25);
 }
 
 .textContainer {

@@ -1,0 +1,61 @@
+.pageRoot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+}
+.pageHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25vw;
+    text-align: center;
+    color:#EC473D;
+}
+.pageHeader p {
+    margin: 7vw 0 0 0;
+}
+.pageHeader p span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 5.7vw;
+    margin-left:  0.8vw;
+    vertical-align: 3vw;
+
+}
+.pageHeader p i {
+    font-size: 11vw;
+}
+.backButtonWrapper {
+    height: 25vw;
+    width: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.backButton {
+    height: 50%;
+    width: 50%;
+    margin: 25%;
+    border-radius: 999px;
+    border: none;
+    background: none;
+    color: #EC473D;
+}
+.backButton i {
+    font-size: 9vw;
+}
+.pageContent{
+    top: 25vw;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: scroll;
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+}

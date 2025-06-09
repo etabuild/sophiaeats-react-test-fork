@@ -55,49 +55,24 @@
     margin: 0;
 }
 
+.gradObj {
+    position: absolute;
+    bottom: -15px;
+    height: 16px;
+    left: 0;
+    right: 0;
+    z-index: 46;
+    background-color: #ffe4ceFF;
+    background-image:linear-gradient(0deg, #ffe4ce00 0%, #ffe4ceFF 100%);
+}
 .blurObj {
     position: absolute;
     bottom: -15px;
-    width: 100%;
-    height: 15px;
+    height: 16px;
     left: 0;
     right: 0;
-    background-color: #FEF5EC;
-    /*
-    background: linear-gradient(0deg, #FEF5EC00, #FEF5ECFF);
-    */
-    /*
-    backdrop-filter: blur(5px);
-    */
-    backdrop-filter: blur(2rem);
-    mask-image: linear-gradient(
-            to top,
-            rgb(0 0 0 / 0%) 0%,
-            rgb(0 0 0 / 4.9%) 15.5%,
-            rgb(0 0 0 / 10.4%) 22.5%,
-            rgb(0 0 0 / 45%) 47.1%,
-            rgb(0 0 0 / 55%) 52.9%,
-            rgb(0 0 0 / 89.6%) 77.5%,
-            rgb(0 0 0 / 95.1%) 91.9%,
-            rgb(0 0 0 / 100%) 100%
-    );
+    z-index: 47;
+    backdrop-filter: blur(20px);
 }
 
-.blurObj::before {
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    content: "";
-    backdrop-filter: blur(1rem);
-    mask-image: linear-gradient(
-            to bottom,
-            rgb(0 0 0 / 0%) 0%,
-            rgb(0 0 0 / 4.9%) 7.75%,
-            rgb(0 0 0 / 10.4%) 11.25%,
-            rgb(0 0 0 / 45%) 23.55%,
-            rgb(0 0 0 / 55%) 26.45%,
-            rgb(0 0 0 / 89.6%) 38.75%,
-            rgb(0 0 0 / 95.1%) 42.25%,
-            rgb(0 0 0 / 100%) 50%
-    );
-}
+

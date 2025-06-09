@@ -14,7 +14,7 @@ export const CartContainer = () => {
     const navigate = useNavigate();
     const inCartDishMenuList = inCartItem.map((item) =>{
         const dishMenu = dishMenuList.find(({id})=> id === item.itemId)
-        return dishMenu
+        return{...dishMenu, amount: item.amount}
     }).filter(item=> item != undefined)
     const list = [
         {name: '鶏唐揚げ定食', price: 550, imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaNt5ObLITauyY8OnKHSmXlvIkAOYVIVLMw&s'},

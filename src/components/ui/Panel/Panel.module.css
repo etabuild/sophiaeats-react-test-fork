@@ -3,7 +3,7 @@
     min-width: 210px;
     height: 210px;
     border-radius: 30px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(181, 143, 96, 0.4);
     display: inline-block;
     position: relative;
 }
