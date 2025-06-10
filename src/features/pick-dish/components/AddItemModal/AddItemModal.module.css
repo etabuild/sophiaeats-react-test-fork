@@ -5,6 +5,7 @@
     font-weight: bold;
 }
 
+
 .cardContainer {
     width: 55vw;
     height: 55vw;
@@ -41,4 +42,46 @@
     font-size: 5.4vw;
     padding-left: 15px;
     font-weight: bold;
+}
+.proceedBtnSection{
+    margin: 16px auto 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+
+}
+.proceedBtnSection button{
+    position: relative;
+    font-family: 'line_seed_jp', sans-serif;
+    font-size: 4vw;
+    width:39.5vw ;
+    border-radius: 999px;
+    height: 50px;
+    border: none;
+}
+.proceedBtnSection .btnProceed span{
+    position: relative;
+    right: 12px;
+}
+.btnProceed{
+    color: #fff;
+    background: #EC473D;
+    box-shadow: 0 3px 10px #FEA19C;
+}
+.btnProceed:active{
+    background: #c83e36;
+    box-shadow: 0 0px 0px #FEA19C;
+
+}
+.btnBack{
+    color: #EC473D;
+    background: #FFCE9F;
+
+}
+.proceedBtnSection button i {
+    position: absolute;
+    font-size: 35px;
+    top: 8px;
+    right: 8px;
+    font-variation-settings: 'FILL'0
 }

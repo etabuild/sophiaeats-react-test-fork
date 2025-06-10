@@ -7,16 +7,7 @@ export const useCart = () => {
     const [inCartItem, setInCartItem] = useAtom(inCartItemAtom)
     const {searchMenuById} = useDishMenu()
     const [totalPrice, setTotalPrice] = useState<number>(0)
-    useEffect(() => {
-/*        console.log("incartItem", inCartItem)
-        let _price = 0;
 
-        inCartItem.forEach((item) => {
-            _price = item.data.price*item.amount
-        })
-        setTotalPrice(_price)*/
-
-    }, [inCartItem]);
     const pickItem = (id: string, amount: number) => {
         const menu = searchMenuById(id);
 
@@ -32,7 +23,6 @@ export const useCart = () => {
                 return _p
             })
         } else {
-            console.log("追加中", id)
             setInCartItem((prev) =>
                 [...prev,
                     {

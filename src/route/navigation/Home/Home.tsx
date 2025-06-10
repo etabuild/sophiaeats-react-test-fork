@@ -6,6 +6,7 @@ import {CardGrid} from "../../../components/ui/CardGrid";
 import {DishMenuCard} from "../../../features/dish-menu/components/DishMenuCard";
 import {XScrollView} from "../../../components/ui/XScrollView";
 import type {DishMenuItem} from "../../../features/dish-menu/type.ts";
+import styles from "./Home.module.css"
 
 export const Home = ({dishMenuList, isLoading}:{
     dishMenuList: DishMenuItem[],
@@ -26,7 +27,7 @@ export const Home = ({dishMenuList, isLoading}:{
                 </XScrollView>
                 <div className={'menuSection'}>
                     {isLoading&&<p>読み込み中</p>}
-                    <p className={"menuSectionTitle"}>おすすめメニュー</p>
+                    <p className={styles.menuSectionTitle}>おすすめメニュー</p>
 
                     <CardGrid>
                         {dishMenuList.map((item, index) => {

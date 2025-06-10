@@ -2,13 +2,17 @@ import {getDocs, collection} from "firebase/firestore"
 import {db} from "../../firebase/Firebase.tsx"
 import {useEffect, useState} from "react";
 import type {DishMenuItem} from "../type.ts";
+import {useAtom} from "jotai/index";
+import {authStateAtom} from "../../../atoms.ts";
 export const useDishMenu = () => {
     const [dishMenuList, setDishMenuList] = useState<DishMenuItem[]>([])
     const [loadingDishMenu, setLoading] = useState<boolean>(true)
+    const authState = useAtom(authStateAtom)
     useEffect(() => {
         const fetchData = async () => {
             try {
                 setLoading(true)
+                console.log("メニューデータを呼び出している")
                 const dishMenuSnapshot = await getDocs(collection(db, "menu"))
                 const items:DishMenuItem[] = dishMenuSnapshot.docs.map((doc) => ({
                     id: doc.id,
@@ -29,7 +33,10 @@ export const useDishMenu = () => {
         fetchData()
     },[])
 
+
+
     const searchMenuById = (searchId: string) => {
+        console.log("searching menu by id")
         const menuItem = dishMenuList.find(({id}) => id === searchId)
         if(menuItem != undefined){
             return menuItem

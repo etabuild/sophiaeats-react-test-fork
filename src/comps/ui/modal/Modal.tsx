@@ -27,6 +27,7 @@ export function Modal() {
                     inset: 0,
                     backgroundColor: '#00000088',
                     zIndex: 998,
+                    backdropFilter : 'blur(5px)',
                 }}>
 
                 </div>

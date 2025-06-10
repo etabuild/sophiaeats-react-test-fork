@@ -6,6 +6,7 @@ export const AddItemModal=()=>{
     const navigate = useNavigate()
     return(
         <>
+
             <p className={styles.modalTitle}>
                 商品をカートに追加しました </p>
             <div className={styles.cardContainer}>
@@ -18,12 +19,12 @@ export const AddItemModal=()=>{
                 width: '95%',
                 left: '2.5%'
             }}
-                 className={"proceedBtnSection"}>
-                <button className={"btnBack"} onClick={()=>{
+                 className={styles.proceedBtnSection}>
+                <button className={styles.btnBack} onClick={()=>{
                     closeModal()
 
                 }}>もっと選ぶ</button>
-                <button className={"btnProceed"} onClick={()=>{
+                <button className={styles.btnProceed} onClick={()=>{
                     closeModal()
                     navigate('./cart/')
                 }}>カートへ進む
