@@ -46,9 +46,9 @@ export const Test = () => {
     }
     return (
         <>
-            <PageLayout pageIcon={"shopping_cart_checkout"} pageTitle={"支払い"} navigate={navigate}>
+            {/*<PageLayout pageIcon={"shopping_cart_checkout"} pageTitle={"支払い"} navigate={navigate}>
                 <Payment></Payment>
-                </PageLayout>
+                </PageLayout>*/}
         </>
     )
 }
