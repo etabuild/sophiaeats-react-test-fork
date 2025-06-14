@@ -4,12 +4,15 @@ import {useEffect} from "react";
 import {useCart} from "../../features/pick-dish/hooks/AddItemHook.tsx";
 import type {DishMenuItem} from "../../features/dish-menu/type.ts";
 import {useDishMenu} from "../../features/dish-menu/hooks/DishMenuHook.tsx";
+import {useAtomValue} from "jotai/index";
+import {dishMenuListAtom} from "../../atoms.ts";
 
 export const CartContainer = () => {
     useEffect(()=>{
 
     },[])
-    const {dishMenuList, searchMenuById} = useDishMenu()
+    const { searchMenuById} = useDishMenu()
+    const dishMenuList = useAtomValue(dishMenuListAtom)
     const {inCartItem, totalPrice} = useCart()
     const navigate = useNavigate();
     const inCartDishMenuList = inCartItem.map((item) =>{

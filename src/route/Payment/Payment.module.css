@@ -1,8 +1,64 @@
 .totalPriceLabel {
 
+    width: 25vw;
+    text-align: right;
+    margin: 0;
+    font-weight: 400;
 }
+
 .totalPriceSection {
     height: 80px;
     display: flex;
-    
+    background: #fff;
+    gap: 15px;
+    border-radius: 20px;
+    line-height: 80px;
+
+}
+
+.totalPriceNumber {
+    margin: 0;
+    font-weight: bold;
+    font-size: 6.5vw;
+}
+
+.paymentSection {
+    margin-top: 40px;
+}
+
+.paymentSection p {
+    margin: 0 0 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.paymentSection button {
+    text-align: left;
+    padding: 0 32px;
+    font-family: 'line_seed_jp', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 999px;
+    height: 80px;
+    margin: 5px 0;
+    background: white;
+    border: solid 4px #EC473D;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(236, 71, 61, 0.37);
+}
+
+.paymentSection button i {
+    font-variation-settings: 'FILL' 0;
+    position: absolute;
+    font-size: 34px;
+    right: 18px;
+    top: 18px;
+    display: inline-block;
+    color: #EC473D;
+    bottom: 0;
+}
+.paymentSection button img {
+    height:100%;
+
 }

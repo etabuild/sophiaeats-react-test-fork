@@ -9,12 +9,13 @@
     /*border: solid 2px;*/
     /*border-image: linear-gradient(0deg, #888 0%, #fff 100%) 1;*/
     /*background: #fff8f7b4;*/
+    border: solid 3px #b6362e;
 
     background: #EC473D;
+
     display: flex;
     box-shadow: 0 4px 15px rgba(156, 156, 156, 0.589);
     justify-content: space-around;
-    border: solid 3px #b6362e;
     position: fixed;
     bottom: 22px;
     left: 50%;

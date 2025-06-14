@@ -1,6 +1,6 @@
 import styles from "./PageLayout.module.css"
 import type {PageLayoutProps} from "./index.ts";
-export const PageLayout = ({pageIcon, pageTitle, children, navigate}:PageLayoutProps) => {
+export const PageLayout = ({pageIcon, pageTitle, children, navigate, navigatePath}:PageLayoutProps) => {
     return (
         <>
             <div className={styles.pageRoot}>

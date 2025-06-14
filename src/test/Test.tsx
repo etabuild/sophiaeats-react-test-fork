@@ -2,6 +2,7 @@ import {AppBar} from "../components/layout/AppBar";
 import {AppLayout} from "../components/layout/AppLayout";
 import { NavBar } from "../components/layout/NavBar";
 import {NavItem} from "../components/layout/NavItem";
+import {Payment} from "../../src/route/Payment"
 import { Home} from "../route/navigation/Home"
 import {CardGrid} from "../components/ui/CardGrid";
 import {DishMenuCard} from "../features/dish-menu/components/DishMenuCard";
@@ -46,8 +47,8 @@ export const Test = () => {
     return (
         <>
             <PageLayout pageIcon={"shopping_cart_checkout"} pageTitle={"支払い"} navigate={navigate}>
-                <h1>支払い方法を選択</h1>
-            </PageLayout>
+                <Payment></Payment>
+                </PageLayout>
         </>
     )
 }

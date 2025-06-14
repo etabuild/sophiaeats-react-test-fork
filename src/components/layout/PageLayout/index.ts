@@ -5,5 +5,6 @@ export type PageLayoutProps = {
     pageIcon: string
     pageTitle: string
     navigate: NavigateFunction
+    navigatePath: string
     children?: React.ReactNode
 }

@@ -9,4 +9,5 @@ export const isOpenModalAtom = atom<boolean>(false)
 export const authStateAtom = atom<{
     uid: string | undefined
 }>({uid: undefined})
+export const dishMenuListAtom = atom<DishMenuItem[]>([])
 export const inCartItemAtom = atom<{data: DishMenuItem, amount: number}[]>([])

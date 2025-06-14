@@ -20,7 +20,7 @@ export const Cart = ({navigate, list,totalPrice}: CartProps) => {
 
     return (
         <>
-            <PageLayout pageIcon={"shopping_cart"} pageTitle={"カート"} navigate={navigate} >
+            <PageLayout pageIcon={"shopping_cart"} pageTitle={"カート"} navigate={navigate} navigatePath={"./../"}>
 
                 <div className={"inCartItemSection"}>
                     {list.map((item, i) => (
@@ -67,7 +67,7 @@ export const Cart = ({navigate, list,totalPrice}: CartProps) => {
                 </div>
                 <div className={"proceedBtnSection"}>
                     <button className={"btnBack"}>もっと選ぶ</button>
-                    <button className={"btnProceed"}><span>決済へ進む</span>
+                    <button className={"btnProceed"} onClick={()=>{navigate("./payment/")}}><span>決済へ進む</span>
                         <i className={"material-symbols-rounded"}>arrow_circle_right</i>
                     </button>
                 </div>

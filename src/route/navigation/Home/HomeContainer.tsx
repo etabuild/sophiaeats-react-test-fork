@@ -1,7 +1,11 @@
 import {Home} from './Home.tsx'
 import {useDishMenu} from "../../../features/dish-menu/hooks/DishMenuHook.tsx";
+import {useAtom} from "jotai/index";
+import {dishMenuListAtom} from "../../../atoms.ts";
 export const HomeContainer = ()=>{
-    const {loadingDishMenu, dishMenuList} = useDishMenu()
+    const {loadingDishMenu} = useDishMenu()
+    const [dishMenuList, setDishMenuList] = useAtom(dishMenuListAtom)
+
     const list = [{
         name: 'たぬきうどん',
         price: 330,

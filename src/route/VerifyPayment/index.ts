@@ -1,0 +1,1 @@
+export {VerifyPaymentContainer as VerifyPayment} from "./VerifyPaymentContainer";

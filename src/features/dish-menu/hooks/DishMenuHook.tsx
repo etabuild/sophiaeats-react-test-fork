@@ -3,9 +3,9 @@ import {db} from "../../firebase/Firebase.tsx"
 import {useEffect, useState} from "react";
 import type {DishMenuItem} from "../type.ts";
 import {useAtom} from "jotai/index";
-import {authStateAtom} from "../../../atoms.ts";
+import {authStateAtom, dishMenuListAtom} from "../../../atoms.ts";
 export const useDishMenu = () => {
-    const [dishMenuList, setDishMenuList] = useState<DishMenuItem[]>([])
+    const [dishMenuList, setDishMenuList] = useAtom(dishMenuListAtom)
     const [loadingDishMenu, setLoading] = useState<boolean>(true)
     const authState = useAtom(authStateAtom)
     useEffect(() => {
@@ -45,5 +45,5 @@ export const useDishMenu = () => {
         }
     }
 
-    return{loadingDishMenu, dishMenuList, searchMenuById}
+    return{loadingDishMenu, searchMenuById}
 }
