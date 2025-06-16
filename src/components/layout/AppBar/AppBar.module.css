@@ -32,7 +32,13 @@
     left: 0;
     right: 0;
     height: 17vw;
+    /*
+    max-height: 7vh;
+    */
     padding: 4.5vw 4.5vw 3.5vw 6vw;
+    /*
+    padding: 18px 18px 12px 24px
+    */
     /*
     border-bottom: 4px solid #EC473D;
     */
@@ -73,6 +79,18 @@
     right: 0;
     z-index: 47;
     backdrop-filter: blur(20px);
+}
+@media screen and (min-width: 481px) {
+    .appBar{
+        height: 12vh;
+        padding: 2vw 2vw 1.5vw 3vw;
+    }
+    .appBarLogo {
+        height: 12vh;
+    }
+}
+@media screen and (min-width: 960px) {
+
 }
 
 

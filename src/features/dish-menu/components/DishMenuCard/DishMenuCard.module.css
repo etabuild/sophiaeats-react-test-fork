@@ -13,7 +13,7 @@
     position: absolute;
     bottom: 0;
     height: 15vw;
-    background-color: #FEF5EC;;
+    background-color: #FEF5EC;
     display: grid;
     grid-template-columns: 28vw 12vw;
     grid-template-rows: 7vw 8vw;

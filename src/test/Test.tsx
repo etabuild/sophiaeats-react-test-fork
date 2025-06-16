@@ -3,7 +3,7 @@ import {AppLayout} from "../components/layout/AppLayout";
 import { NavBar } from "../components/layout/NavBar";
 import {NavItem} from "../components/layout/NavItem";
 import {Payment} from "../../src/route/Payment"
-import { Home} from "../route/navigation/Home"
+import {Home} from "../route/navigation/Home"
 import {CardGrid} from "../components/ui/CardGrid";
 import {DishMenuCard} from "../features/dish-menu/components/DishMenuCard";
 import {useAtomValue} from "jotai/index";
