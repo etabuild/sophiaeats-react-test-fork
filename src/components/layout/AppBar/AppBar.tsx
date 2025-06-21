@@ -8,16 +8,7 @@ interface AppBarProps {
 export const AppBar = ({cartButtonClicked}: AppBarProps) => {
     return (
         <>
-            <div className={`
-                flex
-                fixed
-                pt-4 pr-3 pb-3 pl-6
-              
-                w-full
-                justify-between
-            `
-
-            }>
+            <div className={styles.appBar}>
                 <img className={styles.appBarLogo} src={logo}/>
                 <div className="appBarBtnContainer">
                     <button className={styles.appBarBtn}>

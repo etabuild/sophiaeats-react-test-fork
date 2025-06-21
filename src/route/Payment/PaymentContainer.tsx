@@ -3,16 +3,18 @@ import {PageLayout} from "../../components/layout/PageLayout";
 import {useNavigate} from "react-router-dom";
 import {useAtomValue} from "jotai/index";
 import {authStateAtom, inCartItemAtom} from "../../atoms.ts";
+import {usePayRequest} from "../../features/checkout/hooks/PayRequestHook.tsx";
 
 export const PaymentContainer = () => {
     const navigate = useNavigate();
     const authState = useAtomValue(authStateAtom)
     const inCartItems = useAtomValue(inCartItemAtom);
+    const {requestPayPay} = usePayRequest()
     const paypay = async() => {
         console.log(import.meta.env.VITE_BACKEND_EXPRESS_PORT)
         const items = inCartItems.map((item) =>({
                 id: item.data.id,
-                amount: item.amount
+                amount: item.quantity
             }));
         fetch(`${import.meta.env.VITE_BACKEND_EXPRESS_PORT}/purchase-by-paypay`, {
             method: "POST",
@@ -39,7 +41,7 @@ export const PaymentContainer = () => {
                     navigate={navigate}
                     navigatePath={"./../cart/"}
         >
-            <Payment paypayFunction={paypay}
+            <Payment paypayFunction={requestPayPay}
             />
         </PageLayout>
     )

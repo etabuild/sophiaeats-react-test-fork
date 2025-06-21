@@ -30,14 +30,14 @@
 }
 .appBarBtn span {
     margin-top: 0.35vw;
-    color: #EC473D;
+    color: var(--color-primary);
     font-size:10vw;
 }
 .appBarBtn:hover {
     background-color: #ffbcb9;
 }
 .appBar{
-    background-color: #FFE6CE;
+    background-color: var(--color-primary-tint);
     z-index: 40;
     display: flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@
 
 
 body {
-    background: #FFE6CE;
+    background: var(--color-primary-tint);
     font-family: 'line_seed_jp', sans-serif;
 
 }
@@ -100,7 +100,7 @@ body {
 }
 
 .navbarItem.focused{
-    color: #EC473D;
+    color: var(--color-primary);
 
 }
 .navbarItemTitle {
@@ -135,7 +135,7 @@ body {
     transform: translateX(-50%);
     position: fixed;
     backdrop-filter: blur(9px);
-    background-color: #FFE6CE;
+    background-color: var(--color-primary-tint);
     z-index: -1;
     mask-image:
             linear-gradient(to top, rgb(0 0 0 / 100%) 50%, rgb(0 0 0 / 8%) 93%, rgb(0 0 0 / 0%) 100%)
@@ -151,7 +151,7 @@ body {
     /*border-image: linear-gradient(0deg, #888 0%, #fff 100%) 1;*/
     /*background: #fff8f7b4;*/
 
-    background: #EC473D;
+    background: var(--color-primary);
     display: flex;
     box-shadow: 0 4px 15px rgba(156, 156, 156, 0.589);
     justify-content: space-around;

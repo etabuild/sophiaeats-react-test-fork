@@ -38,7 +38,9 @@ export const Cart = ({navigate, list,totalPrice}: CartProps) => {
                             </select>*/}
                             <p className={"dropdown"}>x{item.amount}</p>
                             <button className={"deleteButton"}>
-                                <i className={"material-symbols-rounded"}>delete</i>
+                                <i className={"material-symbols-rounded"} onClick={()=>{
+
+                                }}>delete</i>
                             </button>
                         </div>
 

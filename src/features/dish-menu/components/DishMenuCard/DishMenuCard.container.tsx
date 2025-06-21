@@ -1,7 +1,7 @@
 import {useModal} from "../../../../comps/ui/modal/Modal.tsx";
 import {DishMenuCard} from "./DishMenuCard.tsx";
 import {AddItemModal} from "../../../pick-dish/components/AddItemModal/AddItemModal.tsx";
-import {useCart} from "../../../pick-dish/hooks/AddItemHook.tsx";
+import {useCart} from "../../../pick-dish/hooks/CartHook.tsx";
 
 export const DishMenuCardContainer = (
     { imgSrc, name,price,id }: {imgSrc: string, name: string , price: number, id: string}

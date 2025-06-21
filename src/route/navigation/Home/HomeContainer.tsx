@@ -1,11 +1,15 @@
 import {Home} from './Home.tsx'
 import {useDishMenu} from "../../../features/dish-menu/hooks/DishMenuHook.tsx";
-import {useAtom} from "jotai/index";
-import {dishMenuListAtom} from "../../../atoms.ts";
+import {useAtom, useAtomValue} from "jotai/index";
+import {authStateAtom, dishMenuListAtom, menuLoadingAtom} from "../../../atoms.ts";
+import {useEffect} from "react";
 export const HomeContainer = ()=>{
-    const {loadingDishMenu} = useDishMenu()
+    const authState = useAtomValue(authStateAtom)
+    useEffect(() => {
+        console.log(authState.uid)
+    }, [authState]);
+    const isMenuLoading = useAtomValue(menuLoadingAtom)
     const [dishMenuList, setDishMenuList] = useAtom(dishMenuListAtom)
-
     const list = [{
         name: 'たぬきうどん',
         price: 330,
@@ -39,6 +43,6 @@ export const HomeContainer = ()=>{
         },
     ]
     return(
-        <Home dishMenuList={dishMenuList} isLoading={loadingDishMenu} />
+        <Home dishMenuList={dishMenuList} isLoading={isMenuLoading} />
     )
 }

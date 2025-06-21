@@ -15,7 +15,7 @@
     right: 0;
     height: 25vw;
     text-align: center;
-    color:#EC473D;
+    color:var(--color-primary);
 }
 .pageHeader p {
     margin: 7vw 0 0 0;
@@ -45,7 +45,7 @@
     border-radius: 999px;
     border: none;
     background: none;
-    color: #EC473D;
+    color: var(--color-primary);
 }
 .backButton i {
     font-size: 9vw;

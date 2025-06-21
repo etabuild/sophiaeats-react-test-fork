@@ -6,7 +6,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
     plugins: [
         react(),
+/*
         tailwindcss(),
+*/
         VitePWA({
             registerType: 'autoUpdate',
             includeAssets: ['favicon.ico', 'apple-touch-icon.png'],

@@ -11,7 +11,7 @@
 
 .appBarBtn span {
     margin-top: 0.35vw;
-    color: #EC473D;
+    color: var(--color-primary);
     font-size: 10vw;
 }
 
@@ -21,7 +21,7 @@
 
 .appBar {
 
-    background-color: #FFE6CE;
+    background-color: var(--color-primary-tint);
     z-index: 40;
     display: flex;
     justify-content: space-between;
@@ -80,17 +80,4 @@
     z-index: 47;
     backdrop-filter: blur(20px);
 }
-@media screen and (min-width: 481px) {
-    .appBar{
-        height: 12vh;
-        padding: 2vw 2vw 1.5vw 3vw;
-    }
-    .appBarLogo {
-        height: 12vh;
-    }
-}
-@media screen and (min-width: 960px) {
-
-}
-
 

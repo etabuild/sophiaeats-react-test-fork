@@ -57,7 +57,7 @@
 
 }
 .inCartItem button i {
-    color: #EC473D;
+    color: var(--color-primary);
     font-size: 20px;
 
 }
@@ -98,7 +98,7 @@
 }
 .btnProceed{
     color: #fff;
-    background: #EC473D;
+    background: var(--color-primary);
     box-shadow: 0 3px 10px #FEA19C;
 }
 .btnProceed:active{
@@ -107,7 +107,7 @@
 
 }
 .btnBack{
-    color: #EC473D;
+    color: var(--color-primary);
     background: #FFCE9F;
 
 }
@@ -123,7 +123,7 @@
     gap: 15px;
     height: 80px;
     line-height: 80px;
-    border-top: 6px solid #FFE6CE;
+    border-top: 6px solid var(--color-primary-tint);
 }
 .totalPriceLabel{
     width: 25vw;

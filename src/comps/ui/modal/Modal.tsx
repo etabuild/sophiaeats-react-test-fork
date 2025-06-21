@@ -35,7 +35,7 @@ export function Modal() {
                     position: 'fixed',
                     width: '80vw',
                     height: '380px',
-                    background: '#FFE6CE',
+                    background: 'var(--color-primary-tint)',
                     borderRadius: '35px',
 
                     left: '50%',

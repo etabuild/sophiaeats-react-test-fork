@@ -1,7 +1,7 @@
 .modalTitle {
     text-align: center;
     font-size: 19px;
-    color: #EC473D;
+    color: var(--color-primary);
     font-weight: bold;
 }
 
@@ -65,7 +65,7 @@
 }
 .btnProceed{
     color: #fff;
-    background: #EC473D;
+    background: var(--color-primary);
     box-shadow: 0 3px 10px #FEA19C;
 }
 .btnProceed:active{
@@ -74,7 +74,7 @@
 
 }
 .btnBack{
-    color: #EC473D;
+    color: var(--color-primary);
     background: #FFCE9F;
 
 }
