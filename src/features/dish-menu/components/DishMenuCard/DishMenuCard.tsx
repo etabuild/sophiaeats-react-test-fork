@@ -10,10 +10,6 @@ export const DishMenuCard = ({imgSrc, name, price, addDish}: DishMenuCardProps) 
     return (
         <>
             <div
-
-
-
-
                 className={styles.container}
                 style={{
                     background: `#fff`,

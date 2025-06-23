@@ -23,10 +23,16 @@ import {useDishMenu} from "./features/dish-menu/hooks/DishMenuHook.tsx";
 function App() {
     const {signInGoogle} = useAuth()
     const {fetchCart} = useCart()
-
+    const [authState] = useAtom(authStateAtom)
 
     useEffect(() => {
-        signInGoogle()
+        if(!authState.uid){
+            console.log("not sign in")
+/*
+            signInGoogle()
+*/
+
+        }
         fetchCart()
     }, []);
 

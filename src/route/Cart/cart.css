@@ -3,9 +3,9 @@
 .inCartItem {
     padding: 10px 0;
     display: grid;
-    grid-template-columns: 80px 1fr 40px 30px ;
-    grid-template-rows: 30px 50px;
-    height: 80px;
+    grid-template-columns: 70px 1fr 40px 30px ;
+    grid-template-rows: 25px 45px;
+    height: 70px;
 
 }
 .inCartItem .menuImg{
@@ -13,7 +13,7 @@
     /*
     background-size: contain;
     */
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 14px;
+    box-shadow: rgba(172, 157, 144, 0.27) 0 0 14px;
     border-radius: 20px;
     width: 78%;
     height: 78%;
@@ -22,13 +22,13 @@
     grid-row: 1/3;
 }
 .inCartItem .menuTitle{
-    font-size: 3.7vw;
+    font-size:14px;
     line-height: 0.8;
-    margin: auto 0 0 10px;
+    margin: auto 0 0 5px;
 }
 .inCartItem .menuPrice {
 
-    margin: 0 0 0 10px;
+    margin: 0 0 0 5px;
     font-weight: 600;
     font-size: 5.4vw;
     grid-column: 2/3;
@@ -40,9 +40,17 @@
 .inCartItem .dropdown{
     grid-column: 3/4;
     grid-row: 1/3;
-    height: 40px;
+    height: 30px;
     margin: auto;
     width: 100%;
+    background: #ffdbd9;
+    color: var(--color-primary);
+    border: none;
+    /*
+    border: 2px solid var(--color-primary);
+    */
+    border-radius: 99px;
+    text-align: center;
 }
 .inCartItem button {
     grid-column: 4/5;
